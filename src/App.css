@@ -1,0 +1,101 @@
+/* App.css */
+.App {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: rgb(87, 29, 203);
+  color: white;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar span {
+  margin-right: 10px;
+}
+
+.sidebar i {
+  font-size: 1.2em;
+}
+
+.sidebar li:hover {
+  background-color: #555;
+}
+
+.sidebar li:after {
+  content: '\2192'; /* right arrow */
+  margin-left: auto;
+}
+
+/* Additional styling for Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.home {
+  text-align: center;
+}
+
+.home-bar-cust {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  max-width: 200px;
+  text-align: center;
+}
+
+.diagram-content {
+  display: flex;
+  align-items: flex-end;
+  height: 150px;
+}
+
+.bar {
+  width: 20px;
+  border-radius: 5px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.pie-chart {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.slice {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 50%, 100% 0%, 100% 100%);
+  transform-origin: 100%;
+}
